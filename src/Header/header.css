@@ -1,0 +1,122 @@
+.main-head{
+    height: 70px;
+    background-color: rgb(75, 75, 170);
+    display: flex;
+}
+.main-title{
+    font-size: 3rem;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 10%;
+    letter-spacing: 1px;
+}
+.main-title:hover{
+    cursor: pointer;
+}
+.head-button-div{
+    margin-left: auto;
+    margin-right: 10%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.head-button{
+    background-color: rgb(240, 205, 9);
+    height: 40px;
+    display: block;
+    margin-left: auto;
+    width: 200px;
+    border-radius: 5px;
+    border-style: none;
+    outline: none;
+}
+.head-button:hover{
+    cursor: pointer;
+}
+.sub-style{
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.icon{
+    margin-right: 7px;
+    font-size: 1rem;
+}
+.open-at-750{
+display: none;
+margin-top: auto;
+margin-bottom: auto;
+margin-left: auto;
+color: white;
+}
+.r-icon{
+    padding: 10px 25px 0px;
+}
+
+@media screen and (max-width:1200px){
+    .main-title{
+       margin-left: 5%;
+       font-size: 2.9rem;
+    }
+    .head-button-div{
+       margin-right: 5%;
+    }
+    .head-button{
+        height: 37px;
+        width: 192px;
+    }
+}
+@media screen and (max-width:1000px){
+    .main-title{
+       margin-left: 30px;
+       font-size: 2.7rem;
+    }
+    .head-button-div{
+       margin-right: 30px;
+    }
+    .head-button{
+        height: 33px;
+        width: 190px;
+    }
+}
+@media screen and (max-width:900px){
+    .main-title{
+       margin-left: 30px;
+       font-size: 2.5rem;
+    }
+    .head-button-div{
+       margin-right: 30px;
+    }
+}
+@media screen and (max-width:720px){
+    .open-at-750{
+       display: block;
+    }
+    .head-button-div{
+       display: none;
+    }
+     .main-head{
+        height: 60px;
+    }
+    #title-id{
+        font-size: 7vw;
+    }
+}
+
+@media screen and (max-width:410px){
+ 
+    #title-id{
+        font-size: 5vw;
+    }
+    .main-head{
+        font-size: medium;
+    }
+}
+@media screen and (max-width:280px){
+    .r-icon:nth-of-type(1){
+        display: none;
+    }
+}
