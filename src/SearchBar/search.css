@@ -1,0 +1,24 @@
+.search-div{
+    height: 50px;
+    display: flex;
+    background-color: rgba(248, 248, 255, 0.685);
+}
+.search-box{
+    margin-top: auto;
+    margin-bottom: auto;
+   margin-left: auto;
+   margin-right: auto;
+}
+.search-div input{
+    width: 80vw;
+    height: 20px;
+    padding: 5px 0px 5px;
+    margin-right: 2vw;
+    margin-left: 8px;
+   border-color: rgb(72, 82, 72);
+    border-width: 1px;
+    outline: none;
+    color: lightslategrey;
+    text-indent: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

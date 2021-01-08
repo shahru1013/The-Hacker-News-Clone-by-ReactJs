@@ -11,7 +11,7 @@ export default class Navbar extends Component {
          <div className="nav-boss">
             <div className="navbar-main">
                 <div className="left-navbar">
-                   <button className="nav-btn" onClick={this.props.onClick} val="home">Home</button>
+                   <button className="nav-btn" onClick={this.props.onClick} val="Home">Home</button>
                    <button className="nav-btn" onClick={this.props.onClick} val="DataBreaches">Data Breaches</button>
                    <button className="nav-btn" onClick={this.props.onClick} val="CyberAttack">Cyber Attack</button>
                    <button className="nav-btn" onClick={this.props.onClick} val="Vulnerabilities">Vulnerabilities</button>
@@ -25,9 +25,9 @@ export default class Navbar extends Component {
                 </div>
             </div>
             <div className="nav-open-720">
-                 <button className="nav-o-btn"><FontAwesomeIcon icon={faHome} className="nav-icon-720"/>Home</button>
-                 <button className="nav-o-btn"><FontAwesomeIcon icon={faEnvelope} className="nav-icon-720"/>Newsletter</button>
-                 <button className="nav-o-btn"><FontAwesomeIcon icon={faShoppingBasket} className="nav-icon-720"/>Offer</button>
+                 <button className="nav-o-btn" onClick={this.props.onClick} val="Home"><FontAwesomeIcon icon={faHome} className="nav-icon-720"/>Home</button>
+                 <button className="nav-o-btn" onClick={this.props.onClick} val="Newsletter"><FontAwesomeIcon icon={faEnvelope} className="nav-icon-720"/>Newsletter</button>
+                 <button className="nav-o-btn" onClick={this.props.onClick} val="Offer"><FontAwesomeIcon icon={faShoppingBasket} className="nav-icon-720"/>Offer</button>
             </div>
         </div>
         )

@@ -4,10 +4,13 @@ import {FontAwesomeIcon} from '../../node_modules/@fortawesome/react-fontawesome
 import './header.css'
 
 export class Header extends Component {
+    constructor(props){
+        super(props);
+    }
     render() {
         return (
          <div className="main-head">
-             <p className="main-title" id="title-id">The Hacker News</p>
+             <p className="main-title" id="title-id" onClick={this.props.onClick} val="TheHackerNews">The Hacker News</p>
              <div className="head-button-div">
                 <button className="head-button">
                   <div className="sub-style">
@@ -17,8 +20,8 @@ export class Header extends Component {
                  </button>
                 </div>
                 <div className="open-at-750">
-                    <FontAwesomeIcon icon={faSearch} className="r-icon"/>
-                    <FontAwesomeIcon icon={faBars} className="r-icon"/>
+                    <FontAwesomeIcon icon={faSearch} className="r-icon" onClick={this.props.onClick} val="SearchBox"/>
+                    <FontAwesomeIcon icon={faBars} className="r-icon" onClick={this.props.onClick} val="Option"/>
                 </div>
             </div>
         )
