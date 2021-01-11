@@ -1,0 +1,123 @@
+.overlay-div{
+    background-color:rgb(76, 76, 161);
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    animation-duration: 0.1s;
+    animation-name: animate-open;
+}
+.link{
+    text-decoration: none;
+    color:rgb(175, 210, 241);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 5px;
+}
+.link:hover{
+    border-bottom-style: solid;
+    border-width: 1px;
+}
+.overlay-body{
+    width: 35%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.cross-btn{
+    text-align: right;
+}
+.menu-item{
+    display: flex;
+}
+.menu-item h4{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.contact-div h4{
+    margin-top: 60px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.right-menu{
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+ 
+}
+.left-menu{
+    display: flex;
+    flex-direction: column;
+}
+@keyframes animate-open{
+    from{
+      margin-top: 5%;
+    }
+    to{
+       margin-top: 0%;
+    }
+}
+@media screen and (max-width:1000px){
+    .overlay-body{
+        width: 40%;
+    }
+   
+}
+@media screen and (max-width:800px){
+    .overlay-body{
+        width: 50%;
+    }
+}
+@media screen and (max-width:650px){
+    .overlay-body{
+        width: 60%;
+    }
+}
+@media screen and (max-width:500px){
+    .overlay-body{
+        width: 70%;
+    }
+    #txt-id{
+        width: 70%;
+    }
+
+}
+@media screen and (max-width:400px){
+    .overlay-body{
+        width: 80%;
+    }
+}
+@media screen and (max-width:300px){
+    .overlay-body{
+        width: 95%;
+    }
+}
+.sub-contact{
+    display: flex;
+}
+.mail-icon{
+   border-style: solid;
+   margin-top: auto;
+   margin-bottom: auto;
+   height: 43px;
+   width: 43px;
+   border-radius: 50%;
+   border-width: 1px;
+   border-color: aliceblue;
+   background-color: rgb(115, 115, 185);
+}
+#icon{
+  margin-top: 12px;
+  margin-left: 12px;
+  width: 20px;
+  height: 20px;
+  color: aliceblue;
+}
+.txt{
+    color:rgb(175, 210, 241);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 80%;
+    margin-left: 30px;
+    font-size: small;
+}
+.cross:hover{
+    cursor: pointer;
+}

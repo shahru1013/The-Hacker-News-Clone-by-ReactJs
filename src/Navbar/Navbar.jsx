@@ -3,9 +3,6 @@ import {faSearch,faBars,faEnvelope,faHome,faShoppingBasket} from '../../node_mod
 import {FontAwesomeIcon} from '../../node_modules/@fortawesome/react-fontawesome'
 import './navbar.css'
 export default class Navbar extends Component {
-   constructor(props){
-       super(props);
-   }
     render() {
         return (
          <div className="nav-boss">

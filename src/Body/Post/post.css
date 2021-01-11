@@ -1,0 +1,32 @@
+.left-div{
+    float: left;
+    background-color: chocolate;
+    margin-left: 9vw;
+    width: 52vw;
+}
+.right-div{
+    float: right;
+    background-color: cyan;
+    margin-right: 11vw;
+    width: 26vw;
+}
+@media screen and (max-width:1200px){
+    .left-div{
+       margin-left: 5vw;
+       width: 58vw;
+    }
+    .right-div{
+       margin-right: 5vw;
+       width: 30vw;
+    }
+}
+@media screen and (max-width:1000px){
+    .left-div{
+        margin-left: 3vw;
+        width: 60vw;
+     }
+     .right-div{
+        margin-right: 3vw;
+        width: 32vw;
+     }
+}

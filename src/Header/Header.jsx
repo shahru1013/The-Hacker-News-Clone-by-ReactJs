@@ -4,9 +4,6 @@ import {FontAwesomeIcon} from '../../node_modules/@fortawesome/react-fontawesome
 import './header.css'
 
 export class Header extends Component {
-    constructor(props){
-        super(props);
-    }
     render() {
         return (
          <div className="main-head">
