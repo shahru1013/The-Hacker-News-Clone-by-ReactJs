@@ -1,0 +1,21 @@
+
+.home-div{
+    display: flex;
+}
+.rd{
+   margin-top: 6vh;
+   width: 25vw;
+}
+@media screen and (max-width:850px){
+    .rd{
+        display: none;
+    }
+    .ld{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+.n-p{
+    margin-top: 100px;
+    background-color: aqua;
+}

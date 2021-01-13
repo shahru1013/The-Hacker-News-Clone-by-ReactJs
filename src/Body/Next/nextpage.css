@@ -1,0 +1,42 @@
+.next{
+    float: right;
+}
+.previous{
+    float: left;
+}
+.next button{
+   background-color: rgb(41, 41, 197);
+   margin-top: 40px;
+   margin-top: 40px;
+   width: 130px;
+   height: 45px;
+   font-size: medium;
+   color: cornsilk;
+   margin-bottom: 100px;
+   border-style: none;
+   border-radius: 5px;
+   outline: none;
+}
+.previous button{
+    background-color: blue;
+    margin-top: 40px;
+    width: 130px;
+    height: 45px;
+    font-size: medium;
+    color: cornsilk;
+    margin-bottom: 100px;
+    border-style: none;
+    border-radius: 5px;
+    outline: none;
+}
+.next button:hover{
+    cursor: pointer;
+}
+.previous button:hover{
+    cursor: pointer;
+}
+.nextdiv{
+    display: block;
+    margin-left: 10vw;
+    width: 55vw;
+}

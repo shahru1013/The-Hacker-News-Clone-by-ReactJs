@@ -5,14 +5,23 @@ import Navbar from './Navbar/Navbar'
 import Search from './SearchBar/Search'
 import Option from './Option/Option'
 import Post from './Body/Post/Post'
+import Popular from './Body/Popular/Popular'
+import Nextpage from './Body/Next/Nextpage'
 function App() {
+  const click = (val)=>{
+    alert("Clicked news no : "+val.target.getAttribute('number'));
+    //console.log(val.target.getAttribute('number'));
+}
   const[searchClick,isopen]=useState(0);
   const[menuBarClick,makeBlink]=useState(0);
-  var clickItem=0;
-  const obj={
-    name:'shahru',
-    age:100
+  const[loopStart,changeStart]=useState(1);
+  const[loopEnd,changeEnd]=useState(4);
+  var arra=[];
+  for(var i=loopStart;i<loopEnd;i++){
+    arra.push(<Post title={i.toString()+i.toString()} dname={i} time={new Date().toLocaleTimeString()} onClick={click.bind(this)}/>);
   }
+  
+  var clickItem=0;
   return (
     <div className="App">
       {<Header onClick={(e)=>{
@@ -46,10 +55,31 @@ function App() {
 
         }
       }}/>}
-      
-      <Post name={obj}/>
-      
+      <div className="home-div">
+         <div className="ld">
+            {arra.map(
+              (val)=>{
+                 return val;
+              }
+            )
+            }
 
+            {<Nextpage blink={loopStart} onClick={(e)=>{
+              //alert(e.target.getAttribute('val'))
+              var stat = e.target.getAttribute('stat');
+              stat==="next"?changeStart(loopEnd):loopStart-4>0 ? changeStart(loopStart-4):changeStart(1);
+              stat==="next"?changeEnd(loopEnd+4): loopStart-4<=0 ? changeEnd(4):changeEnd(loopStart);
+            }}/>
+            }
+         </div>
+         <div className="rd">
+           <h2 ><b style={{borderBottom:'4px solid black',marginLeft:'2vw'}}>Popular this week</b></h2>
+           <Popular ptitle="p11" pdname="p1"/>
+           <Popular ptitle="p22" pdname="p2"/>
+           <Popular ptitle="p33" pdname="p3"/>
+           <Popular ptitle="p44" pdname="p4"/>
+         </div>
+      </div>
     </div>
   );
 }

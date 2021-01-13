@@ -1,0 +1,42 @@
+.right-div{
+    margin-left: 2vw;
+    margin-top: 15px;
+    height:80px;
+}
+@media screen and (max-width:1200px){
+    .right-div{
+       margin-right: 5vw;
+       width: 30vw;
+    }
+}
+@media screen and (max-width:1000px){
+     .right-div{
+        margin-right: 0vw;
+        width: 32vw;
+     }
+}
+
+.post-right:hover{
+    color: rgb(117, 150, 170);
+}
+.post-right{
+    display: flex;
+}
+.text-right p{
+    margin-top: -6px;
+    padding: 0px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+   text-overflow: ellipsis;
+   -webkit-box-orient: vertical;
+   font-size: 1.1rem;
+   font-family: monospace;
+   line-height: 1.9;
+   font-weight: 900;
+   margin-left: 10px;
+}
+.image-right img{
+    height: 72px;
+    width: 72px;
+}

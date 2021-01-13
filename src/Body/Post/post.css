@@ -1,32 +1,125 @@
 .left-div{
     float: left;
-    background-color: chocolate;
-    margin-left: 9vw;
-    width: 52vw;
+    margin-left: 10vw;
+    width: 55vw;
+    margin-top: 6vh;
 }
-.right-div{
-    float: right;
-    background-color: cyan;
-    margin-right: 11vw;
-    width: 26vw;
+.post-left{
+    font-family: monospace;
+   width: 100%;
+}
+.image-left{
+    float: left;
+    width: 42%;
+}
+.image-left img{
+   width: 100%;
+   height: 160px;
+}
+.text-left{
+  float: right;
+  width: 55%;
+  margin-top: -10px;
+}
+.text-left p{
+    padding: 0%;
+    line-clamp: initial;
+    margin-top: 1vh;
+}
+.title{
+  margin-left: -7px;
+  font-size: x-large;
+  margin-top: -10px;
+  line-height: 1.2;
+  font-weight: 600;
+}
+.n-d{
+   display: flex;
+   padding: 0;
+   height: 25px;
+   margin-top: -20px;
+}
+#name{
+  font-size: 1rem;
+  color:lightslategray;
+  margin-left: 1vw;
+}
+#date{
+    font-size: 1rem;
+    color:rgba(54, 62, 70, 0.979);
+    margin-left: -5px;
+}
+.btm-text{
+    margin-left: -5px;
+    font-size: large;
+    font-family: monospace;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    color:rgba(54, 62, 70, 0.979);
+    line-height: 1.4;
 }
 @media screen and (max-width:1200px){
     .left-div{
        margin-left: 5vw;
        width: 58vw;
     }
-    .right-div{
-       margin-right: 5vw;
-       width: 30vw;
-    }
+
 }
 @media screen and (max-width:1000px){
     .left-div{
         margin-left: 3vw;
         width: 60vw;
      }
-     .right-div{
-        margin-right: 3vw;
-        width: 32vw;
-     }
 }
+
+@media screen and (max-width:850px){
+    .left-div{
+        margin-left: 3vw;
+        width: 90vw;
+     }
+
+}
+@media screen and (max-width:550px){
+    .post-left{
+        display: flex;
+        flex-direction: column;
+        margin-left: 3vw;
+     }
+     .image-left{
+        width: 90%;
+    }
+    .image-left img{
+       width: 100%;
+       height: 160px;
+    }
+    .text-left{
+      width: 90%;
+    }
+
+    .title{
+        margin: -1px;
+        font-size: 5vw;
+        font-weight: bold;
+    }
+    .n-d{
+       display: flex;
+       padding: 0;
+       height: 25px;
+       margin-top: 5px;
+    }
+    #name{
+        font-size: 4vw;
+      }
+      #date{
+          font-size: 4vw;
+      }
+      .btm-text{
+        margin-left: -5px;
+        font-size: 4vw;
+        margin-top: 5px;
+    }
+}
+

@@ -1,7 +1,21 @@
 .search-div{
     height: 50px;
     display: flex;
-    background-color: rgba(248, 248, 255, 0.685);
+    background-color: rgba(255, 255, 255, 0.897);
+    transition: 0.5s;
+    transform: translateY(10%);
+    animation-name: animate-searchBox;
+    animation-duration: 1s;
+    
+}
+@keyframes animate-searchBox{
+   from{
+    opacity: 0;
+    -moz-transition: opacity 0.4s ease-in-out;
+    -o-transition: opacity 0.4s ease-in-out;
+    -webkit-transition: opacity 0.4s ease-in-out;
+    transition: opacity 0.4s ease-in-out;
+   }
 }
 .search-box{
     margin-top: auto;
