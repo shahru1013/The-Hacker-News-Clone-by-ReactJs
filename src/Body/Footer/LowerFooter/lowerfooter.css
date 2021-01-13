@@ -1,0 +1,52 @@
+.lower-sec{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+.about-sec{
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+.pages-sec{
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+.deals-sec{
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+.about-sec h4{
+    border-bottom: 2px solid gray;
+    width: 45px;
+    color: rgb(73, 71, 71);
+}
+.pages-sec h4{
+    border-bottom: 2px solid gray;
+    width: 45px;
+    color: rgb(73, 71, 71);
+}
+.deals-sec h4{
+    border-bottom: 2px solid gray;
+    width: 45px;
+    color: rgb(73, 71, 71);
+}
+
+.link-1{
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    color: grey;
+    font-family: monospace;
+    font-size: 1.1rem;
+}
+.link-1:hover{
+    text-decoration: underline;
+}
+@media screen and (max-width:500px){
+    .deals-sec{
+        display: none;
+    }
+}

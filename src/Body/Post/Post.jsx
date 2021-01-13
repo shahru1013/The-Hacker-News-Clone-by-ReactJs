@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import './post.css'
-import bankhacking from '../../Images/bank-hacking.jpg'
+import trump from '../../Images/trump.jpg'
 import {faCalendarAlt,faUserAlt} from '../../../node_modules/@fortawesome/free-solid-svg-icons'
 import {FontAwesomeIcon} from '../../../node_modules/@fortawesome/react-fontawesome'
 export default class Post extends Component {
@@ -21,7 +21,7 @@ export default class Post extends Component {
                     a.style.textDecoration="none"; }}>
                      <div className="post-left">
                          <div className="image-left">
-                            <img src={bankhacking} alt="news" />
+                            <img src={trump} alt="news" />
                          </div>
                          <div className="text-left">
                              <p onClick={this.props.onClick} number={this.props.dname}  id={this.props.title} className="title">Russian Hacker Gets 12-Years Prison for Massive JP Morgan Chase Hack</p>

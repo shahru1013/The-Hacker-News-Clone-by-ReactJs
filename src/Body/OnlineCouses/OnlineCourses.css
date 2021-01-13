@@ -35,7 +35,7 @@ font-weight: 600;
 }
 @media screen and (max-width:850px){
    .online-div{
-    flex: 0 40vw;
+    flex: 0 39vw;
     margin-left: 2vw;
    }
    .course-pic img{
@@ -48,4 +48,9 @@ font-weight: 600;
   .course-title p{
     font-size: 2.4vw;
   }
+}
+@media screen and (max-width:450px){
+ .course-title p{
+   font-size: 4.4vw;
+ }
 }

@@ -12,13 +12,13 @@
 }
 .courses-div{
     margin-left: 8vw;
-    margin-top: -5px;
+    margin-top: -1vw;
 }
 .online-courses{
     display: flex;
 }
 .header h2{
-    margin-left: 25px;
+    margin-left: 2vw;
 }
 @media screen and (max-width:1200px){
     .courses-div{
@@ -38,11 +38,15 @@
         margin-left: 2.8vw;
     }
     .header h2{
-        margin-left: 15px;
+        font-weight:lighter;
+        font-size: x-large;
+        margin-top: 0;
+        margin-left: 2vw;
     }
     .courses-div{
         margin-left: 7vw;
         margin-right: 7vw;
+        margin-top: -6vh;
      }
     .online-courses{
         display: flex;

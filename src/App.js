@@ -8,6 +8,8 @@ import Post from './Body/Post/Post'
 import Popular from './Body/Popular/Popular'
 import Nextpage from './Body/Next/Nextpage'
 import OnlineCourses from './Body/OnlineCouses/OnlineCourses'
+import NewsLetterMail from './Body/NewsLetterMail/NewsLetterMail'
+import Mainfooter from './Body/Footer/MainFooter/Mainfooter'
 function App() {
   const click = (val)=>{
     alert("Clicked news no : "+val.target.getAttribute('number'));
@@ -81,6 +83,7 @@ function App() {
            <Popular ptitle="p22" pdname="p2"/>
            <Popular ptitle="p33" pdname="p3"/>
            <Popular ptitle="p44" pdname="p4"/>
+           <Popular ptitle="p44" pdname="p4"/>
          </div>
       </div>
       <div className="courses-div">
@@ -94,6 +97,14 @@ function App() {
               <OnlineCourses/>
            </div>
       </div>
+      <div className="nl-div">
+        <NewsLetterMail/>
+      </div>
+
+      <div className="foot-div">
+         {<Mainfooter/>}
+      </div>
+
 
     </div>
   );

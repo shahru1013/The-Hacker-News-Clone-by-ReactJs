@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import me1 from '../../Images/me1.jpg'
+import pass from '../../Images/pass.jpg'
 import './popular.css'
 export default class Popular extends Component {
     render() {
@@ -20,7 +20,7 @@ export default class Popular extends Component {
                 }}>
                    <div className="post-right">
                       <div className="image-right">
-                            <img src={me1} alt="background"/>
+                            <img src={pass} alt="background"/>
                        </div>
                         <div className="text-right" id={this.props.ptitle}>
                              <p>WhatsApp Will Disable Your Account If You Don't Agree Sharing Data With Facebook</p>
