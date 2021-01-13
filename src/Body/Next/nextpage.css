@@ -18,7 +18,7 @@
    outline: none;
 }
 .previous button{
-    background-color: blue;
+    background-color:  rgb(41, 41, 197);;
     margin-top: 40px;
     width: 130px;
     height: 45px;
@@ -31,12 +31,52 @@
 }
 .next button:hover{
     cursor: pointer;
+    margin-right: 10px;
 }
 .previous button:hover{
     cursor: pointer;
+    margin-left: 10px;
 }
 .nextdiv{
     display: block;
     margin-left: 10vw;
     width: 55vw;
+}
+@media screen and (max-width:1200px){
+    .nextdiv{
+       margin-left: 5vw;
+       width: 58vw;
+    }
+
+}
+@media screen and (max-width:1000px){
+    .nextdiv{
+        margin-left: 3vw;
+        width: 60vw;
+     }
+}
+@media screen and (max-width:850px){
+    .nextdiv{
+        width: 90vw;
+     }
+     .next button{
+       margin-right: 2vw;
+     }
+     .previous button{
+         margin-left: 8vw;
+     }
+
+}
+@media screen and (max-width:450px){
+     .next button{
+        width: 30vw;
+        height: 7vh;
+        font-size: small;
+     }
+     .previous button{
+        width: 40vw;
+        height: 7vh;
+        font-size: small;
+     }
+
 }

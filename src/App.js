@@ -7,6 +7,7 @@ import Option from './Option/Option'
 import Post from './Body/Post/Post'
 import Popular from './Body/Popular/Popular'
 import Nextpage from './Body/Next/Nextpage'
+import OnlineCourses from './Body/OnlineCouses/OnlineCourses'
 function App() {
   const click = (val)=>{
     alert("Clicked news no : "+val.target.getAttribute('number'));
@@ -57,12 +58,14 @@ function App() {
       }}/>}
       <div className="home-div">
          <div className="ld">
-            {arra.map(
-              (val)=>{
+           <div className="ld-post">
+              {arra.map(
+                (val)=>{
                  return val;
+                }
+               )
               }
-            )
-            }
+           </div>
 
             {<Nextpage blink={loopStart} onClick={(e)=>{
               //alert(e.target.getAttribute('val'))
@@ -80,6 +83,18 @@ function App() {
            <Popular ptitle="p44" pdname="p4"/>
          </div>
       </div>
+      <div className="courses-div">
+           <div className="header"> 
+              <h2><u><b>Online Courses and Software</b></u></h2>
+           </div>
+           <div className="online-courses">
+              <OnlineCourses/>
+              <OnlineCourses/>
+              <OnlineCourses/>
+              <OnlineCourses/>
+           </div>
+      </div>
+
     </div>
   );
 }

@@ -6,16 +6,48 @@
    margin-top: 6vh;
    width: 25vw;
 }
-@media screen and (max-width:850px){
-    .rd{
-        display: none;
-    }
-    .ld{
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
 .n-p{
     margin-top: 100px;
     background-color: aqua;
 }
+.courses-div{
+    margin-left: 8vw;
+    margin-top: -5px;
+}
+.online-courses{
+    display: flex;
+}
+.header h2{
+    margin-left: 25px;
+}
+@media screen and (max-width:1200px){
+    .courses-div{
+       margin-left: 3vw;
+    }
+}
+@media screen and (max-width:1000px){
+    .courses-div{
+        margin-left: 0.5vw;
+     }
+}
+@media screen and (max-width:850px){
+    .rd{
+        display: none;
+    }
+    .ld-post{
+        margin-left: 2.8vw;
+    }
+    .header h2{
+        margin-left: 15px;
+    }
+    .courses-div{
+        margin-left: 7vw;
+        margin-right: 7vw;
+     }
+    .online-courses{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+

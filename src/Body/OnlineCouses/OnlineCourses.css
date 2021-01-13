@@ -1,0 +1,51 @@
+.online-div{
+  width: 19vw;
+  margin-left: 2vw;
+}
+.course-pic img{
+    width: 100%;
+    height: 20vh;
+}
+.online-div :hover{
+    cursor: pointer;
+    margin-top: -6px;
+  }
+.course-title p{
+font-size: 1.2vw;
+margin-top: 5px;
+font-weight: 600;
+}
+.course-bottom p{
+  color: rgb(102, 102, 102);
+}
+
+@media screen and (max-width:1200px){
+    .online-div{
+        width: 22vw;
+      }
+}
+@media screen and (max-width:1000px){
+    .course-pic img{
+        width: 100%;
+        height: 18vh;
+    }
+    .course-title p{
+        font-size: 1.6vw;
+    }
+}
+@media screen and (max-width:850px){
+   .online-div{
+    flex: 0 40vw;
+    margin-left: 2vw;
+   }
+   .course-pic img{
+    width: 100%;
+    height: 20vw;
+}
+.course-bottom{
+    display: none;
+  }
+  .course-title p{
+    font-size: 2.4vw;
+  }
+}
